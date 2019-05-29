@@ -1,0 +1,20 @@
+import numpy as np
+
+a = np.array([[3, 7], [9, 1]])
+print('我们的数组是：')
+print(a)
+print('\n')
+print('调用 sort() 函数：')
+print(np.sort(a))
+print('\n') 
+print('按列排序：')
+print(np.sort(a, axis=0))
+print('\n')
+dt = np.dtype([('name', 'S10'), ('age', int)])
+a = np.array([("raju", 21), ("anil", 25),
+              ("ravi", 17), ("amar", 27)], dtype=dt)
+print('我们的数组是：')
+print(a)
+print('\n')
+print('按 name 排序：')
+print(np.sort(a, order='name'))
